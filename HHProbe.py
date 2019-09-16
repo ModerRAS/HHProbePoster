@@ -10,6 +10,7 @@ from requests.adapters import HTTPAdapter
 
 import config
 
+# def init():
 me = lmdb.open("/var/HHPP/me")
 us = lmdb.open("/var/HHPP/us")
 asia = lmdb.open("/var/HHPP/asia")
@@ -64,7 +65,8 @@ def parser(html: str):
     info((this_time, my_quality, us_quality, asia_quality, eur_quality))
 
 def Loop():
-	while True:
+    # init()
+    while True:
         try:
             parser(fetch())
         except Exception as e:
