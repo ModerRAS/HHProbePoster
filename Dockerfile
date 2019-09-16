@@ -12,6 +12,7 @@ RUN apk add --no-cache \
             musl-dev \
             libpng-dev \
             freetype-dev \
+            libstdc++ \
             libxslt-dev  && \
     pip install -r requirements.txt
 
